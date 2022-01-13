@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  arch:
+    build: ./archi3/
+  novnc:
+    links:
+      - arch
+    build: ./novnc/
+    ports:
+      - "48000:6080"
