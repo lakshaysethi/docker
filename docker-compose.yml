@@ -8,5 +8,3 @@ services:
     build: ./novnc/
     ports:
       - "48000:6080"
-# do docker-compose up then :
-# use a browser and go to http://localhost:48000/vnc.html and click connect to start using arch i3

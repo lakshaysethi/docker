@@ -17,5 +17,5 @@ RUN git clone https://aur.archlinux.org/yay.git \
 RUN sudo pacman -S reflector --noconfirm && sudo reflector --country 'Australia,New Zealand' --age 6 --latest 5 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 RUN sudo pacman -S firefox python3 nautilus dina-font xorg xterm xorg-xinit x11vnc xorg-server-xvfb i3 dmenu  --noconfirm
 # configure i3
-RUN echo "exec i3" >> ~/.xinitrc && chmod +x ~/.xinitrc && echo "exec xterm" >> ~/.xinitrc 
+RUN echo "exec i3" >> ~/.xinitrc && chmod +x ~/.xinitrc
 CMD ["x11vnc", "-create", "-forever"]
