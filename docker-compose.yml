@@ -7,4 +7,4 @@ services:
       - arch
     build: ./novnc/
     ports:
-      - "48000:6080"
+      - "48001:6080"
