@@ -1,6 +1,6 @@
 # docker
 
-
+run ubuntu-i3 firefox vs code etc in a docker container:
 build the  Dockerfile in i3-ubuntu 
 run the Dockerfile with exposing port 5900
 can use ngrok to port forward to your local 
